@@ -27,7 +27,7 @@ public class ARestController {
     if(principal instanceof UserDetails) {
       System.out.println(((UserDetails) principal));
     } else {
-      principal.toString();
+      System.out.println(principal.toString());
     }
     
     return repository.findAll();
